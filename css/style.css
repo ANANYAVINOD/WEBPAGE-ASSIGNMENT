@@ -661,3 +661,70 @@ h2 {
     margin-top: 30px;
 }
 
+/*................................................
+    8.MEDIA QUERIES
+.................................................*/
+@media (min-width: 991px) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .nav-icon {
+    display: none;
+  }
+}
+
+@media (max-width:990px) {
+    .container .nav-icon div {
+    margin: 5px;
+    width: 25px;
+    height: 4px;
+    background-color:  #eabf25;
+    border-radius: 3px;
+  }
+  .menu-bar {
+    display: none;
+  }
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content .panel-left,
+  .content .panel-right {
+    width: 100%;
+  }
+  .listing-style-three li {
+    padding-left: 0;
+    text-align: center;
+    margin-left: 0;
+  }
+  .footer .flex-box > li {
+    padding-left: 30px; 
+  }
+}
+@media (max-width: 768px)  { 
+  .icon-bar {
+    display: none;
+  }
+  .listing-style-two li{
+    width: 50%;
+    padding: 10px;
+  }
+  .footer .flex-box  {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer .flex-box li {
+    text-align: center;
+  }  
+}
+@media (max-width: 486px) {
+  .listing-style-two li{
+    width: 100%;
+    padding: 10px;
+  }
+}
+  
