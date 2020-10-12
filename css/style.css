@@ -19,7 +19,6 @@
   body {
     font-size: 16px;
     color: black;
-    background-color: #f7f6f4;
     line-height: 30px;
   }
   a,
@@ -495,8 +494,8 @@
 .container {
     z-index: 1;
     background-color: white;
-    box-shadow: 0px 0px 30px #8a8585;
-    padding: 4px 20px;
+    box-shadow: 0px 0px 10px #8a8585;
+    padding: 5px ;
     align-items: center;
 }
 
@@ -507,7 +506,8 @@
 
 header {
     margin: 0 auto;
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 #logoImage {
@@ -556,6 +556,7 @@ h2 {
 .content {
     padding: 64px;
     background-color:#eabf25 ;
+    padding-top: 8em;
 }
 
 .content .panel-left,
@@ -576,10 +577,6 @@ h2 {
 }
 .block {
     padding: 40px;
-}
-
-.block-one {
-  background-color: #3F6CE5 ;
 }
 
 .listing-style-one li img {
@@ -620,9 +617,9 @@ h2 {
     text-align: center;
 }
 
-.block-centre ,
-.block-award {
-  border-bottom: 1px solid #eabf25; ;
+.block-features,
+.testimonial-area {
+  background-color:  #f7f6f4;
 }
 
 /*................................................
@@ -686,6 +683,9 @@ h2 {
   }
   .menu-bar {
     display: none;
+  }
+  .icon-bar {
+    margin-right: 120px;
   }
   .content {
     flex-direction: column;
