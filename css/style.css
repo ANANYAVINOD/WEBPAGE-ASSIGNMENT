@@ -15,6 +15,7 @@ h2 {
     padding: 64px;
     padding-top: 100px;
     background-color:#eabf25 ;
+    padding-top: 8em;
 }
 
 .content .panel-left,
@@ -35,10 +36,6 @@ h2 {
 }
 .block {
     padding: 40px;
-}
-
-.block-one {
-  background-color: #3F6CE5 ;
 }
 
 .listing-style-one li img {
@@ -79,9 +76,9 @@ h2 {
     text-align: center;
 }
 
-.block-centre ,
-.block-award {
-  border-bottom: 1px solid #eabf25; ;
+.block-features,
+.testimonial-area {
+  background-color:  #f7f6f4;
 }
 
 /*................................................
