@@ -498,6 +498,7 @@ button {
   padding: 5px ;
   align-items: center;
   overflow: hidden;
+  top:0;
 }
 
 .flex-box {
@@ -509,6 +510,7 @@ header {
   margin: 0 auto;
   position: fixed;
   width: 100%;
+  top:0;
 }
 
 #logoImage {
@@ -539,6 +541,11 @@ nav li a:hover {
   display: flex;
   padding-left: 30px;
   padding-right: 30px; 
+}
+
+.icon-bar i:hover {
+  background-color: black;
+  color: white;
 }
 
 /*................................................
