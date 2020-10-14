@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Solutions</title>
-    <link rel="stylesheet" href="../css/services-style.css">
+    <link rel="stylesheet" href="../css/contact-style.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,12 +22,12 @@
                     <li><a href="../pages/training.html">Training</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
                 </ul> 
-            </nav>
+            </nav>  
             <div class="icon-bar flex-box">
                 <i class="fa fa-search"></i>
                 <i class="fa fa-user" ></i>
                 <i class="fa fa-envelope"></i>
-            </div>  
+            </div>
             <div class="nav-icon">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -36,58 +36,65 @@
         </div>
     </header>
     <main>
-        <div class="banner">
-            <h1>Consulting, Training, Development:<br> We’ve Got You Covered</h1>
-            <p>Facing challenges with your project or simply looking for advice on how best to utilize
-                our tools? Our experts can help you overcome the issues and transform your apps.</p>
-            <input type=button value='Talk to a consultant' id="service-button">    
-        </div>
-        <div class="content">
-            <section class="block block-consulting">
-                <div class= "title-area">
-                    <h2>Consulting</h2>
-                </div>
-                <div class="data">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 
-                        1500s, when an unknown printer took a gallery of type and scrambled it to make.</p>
-                </div>
-            </section>
-            <section class="block block-education">
-                <div class= "title-area">
-                    <h2>Education</h2>
-                </div>
-                <div class="data">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 
-                        1500s, when an unknown printer took a gallery of type and scrambled it to make.</p>
-                </div>
-            </section>
-            <section class="block block-outsourcing">
-                <div class= "title-area">
-                    <h2>Outsourcing</h2>
-                </div>
-                <div class="data">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 
-                        1500s, when an unknown printer took a gallery of type and scrambled it to make.</p>
-                </div>
-            </section>
-            <section class="block block-modernization">
-                <div class= "title-area">
-                    <h2>Modernization</h2>
-                </div>
-                <div class="data">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 
-                        1500s, when an unknown printer took a gallery of type and scrambled it to make.</p>
-                </div>
-            </section>
-            <section class="block block-information">
-                <h2>Want more information?</h2>
-                <p>Our experts can help you overcome the challenges and transform your apps.</p>
-                <input type=button value='Talk to a consultant' id="service-button">
-            </section>
+        <div class="content flex-box">
+            <div class="panel-left">
+                <h1>Contact Us</h1>
+                <h2>You will hear from us within 24 hours</h2>
+                <h3>Need Support?</h3>
+                <p>Find answers and access our system</p>
+                <h3>Training, Services and Consulting</h3>
+                <p>Leverage our team's expertise in your project</p>
+                <h3>More Questions</h3>
+                <p>Get your answers here</p>
+                <h3>Contact Us By Phone</h3>
+                <p>USA: +1 888 365 2779<br>
+                   UK: +44 13 4436 0444<br>
+                   India: +91 124 4300987<br>
+                   Bulgaria: +359 2 8099850<br>
+                   Australia: +61 3 9805 8670</p>
+            </div>
+            <div class="panel-right">
+                <form>
+                    <div class="label-div">
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="form-div" id="name-container">
+                        <input type="text" name="firstName" placeholder="First Name" class="form-field" id="fname">
+                    </div>
+                    
+                    <div class="label-div">
+                        <label for="Last Name">Subject</label>
+                    </div>
+                    <div class="form-div" id="name-container">
+                        <input type="text" name="lastName" placeholder="Last Name" class="form-field" id="lname">
+                    </div>
+
+                    <div class="label-div">
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="form-div" id="mail-container">
+                        <input type="email" name="mail" placeholder="Email" class="form-field" id="mail">
+                    </div>
+
+                    <div class="label-div">
+                        <label for="companyNmae">Comapny Name</label>
+                    </div>
+                    <div class="form-div" id="company-container">
+                        <input type="text" name="companyNmae" placeholder="Company Name" class="form-field" id="cname">
+                    </div>
+
+                    <div class="label-div">
+                        <label for="Subject">Subject</label>
+                    </div>
+                    <div class="form-div" id="subject-container">
+                        <input type="text" name="subject" placeholder="Subject" class="form-field" id="subject">
+                    </div>
+
+                    <div class="btn">
+                        <input type=button value='Contact Us' id="contact-button">
+                    </div>        
+                </form>
+            </div>
         </div>
     </main>
     <footer>

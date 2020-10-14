@@ -2,83 +2,86 @@
     BODY SECTION
 .................................................*/
 body {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .content {
     padding: 64px;
     padding-top: 100px;
     background-color:#eabf25 ;
-    padding-top: 8em;
 }
 
 .content .panel-left,
 .content .panel-right {
-    padding: 20px;
-    width:50%
+  padding: 20px;
+  width:50%
 }
 
 .panel-left img {
-    width: 70%;
+  width: 70%;
 }
 
 .block .title-area h3 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 40px;
 }
 .block {
-    padding: 40px;
+  padding: 40px;
+}
+
+.block-one {
+background-color: #3F6CE5 ;
 }
 
 .listing-style-one li img {
-    width: 80%;
-    object-fit: cover;
-    height: 100%;
-    vertical-align: middle;
-    border-radius: 15%;
+  width: 80%;
+  object-fit: cover;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 15%;
 }
 
 .listing-style-one li img:hover {
-    transition: 1s all ease-in-out; 
-    transform: scale(1.5);
-    border: 3px solid white;
+  transition: 1s all ease-in-out; 
+  transform: scale(1.5);
+  border: 3px solid white;
 }
 
 .listing-style-two {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .listing-style-two li {
-    width: 30%;
-    list-style-type: square;
+  width: 30%;
+  list-style-type: square;
 }
 
 .listing-style-two p {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .listing-style-three li {
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;
-    margin-left: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  margin-left: 100px;
 }
 
 .testimonial {
-    text-align: center;
+  text-align: center;
 }
 
-.block-features,
-.testimonial-area {
-  background-color:  #f7f6f4;
+.block-centre ,
+.block-award {
+border-bottom: 1px solid #eabf25; ;
 }
 
 /*................................................
@@ -106,9 +109,8 @@ h2 {
   }
 }
 @media (max-width: 486px) {
-  .listing-style-two li{
-    width: 100%;
-    padding: 10px;
-  }
+.listing-style-two li{
+  width: 100%;
+  padding: 10px;
 }
-  
+}
