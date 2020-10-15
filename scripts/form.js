@@ -1,12 +1,14 @@
-document.querySelector("#contact-button").addEventListener("click", function () {
+document.querySelector("#contact-button").addEventListener("click", function (event) {
+    event.preventDefault();
     const name1 = firstNameValidate();
     const name2 = lastNameValidate();
     const phoneNo = numValidate();
     const emailid = emailValidate();
     const subj = subjectValidate();
-    if (name1 && name2 && phoneNo && emailid && subj) {
+    const dOB = dobValidate();
+    if (name1 && name2 && phoneNo && emailid && subj && dOB) {
     let reqObj;
-       reqObj = {name1, name2, phoneNo, emailid, subj};
+       reqObj = {name1, name2, phoneNo, emailid, subj, dOB};
        console.log(reqObj);
     }
 });
@@ -87,4 +89,22 @@ function subjectValidate() {
         subError.innerHTML = "";
         return sub;
     }
+}
+
+function dobValidate() {
+    const dateOfBirth = document.getElementById('DoB').value;
+    const dobError = document.getElementById('dob-error');
+    if (dateOfBirth == "") {
+        dobError.innerHTML = "*Please enter the date of birth";
+    } else {
+        const DOB = new Date(dateOfBirth);
+        const today = new Date();
+        if (DOB > today) {
+            dobError.innerHTML = "*You cannot enter a date in the future";
+        }
+        else if ((today - DOB) > 18) {
+            dobError.innerHTML = "*Age should be greater than 18"
+        }
+    }
+    return dateOfBirth;  
 }
