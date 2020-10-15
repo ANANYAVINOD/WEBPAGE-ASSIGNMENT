@@ -94,16 +94,25 @@ function subjectValidate() {
 function dobValidate() {
     const dateOfBirth = document.getElementById('DoB').value;
     const dobError = document.getElementById('dob-error');
+    const DOB = new Date(dateOfBirth);
+    const today = new Date();
+    let tyear = today.getFullYear();
+    let dyear = DOB.getFullYear();
+    let age = tyear - dyear;
     if (dateOfBirth == "") {
         dobError.innerHTML = "*Please enter the date of birth";
-    } else {
-        const DOB = new Date(dateOfBirth);
-        const today = new Date();
+        return false;
+    } else  {
         if (DOB > today) {
             dobError.innerHTML = "*You cannot enter a date in the future";
+            return false;
         }
-        else if ((today - DOB) > 18) {
-            dobError.innerHTML = "*Age should be greater than 18"
+        else if (age < 18) {
+            dobError.innerHTML = "*Age should be greater than 18";
+            return false;
+        }
+        else  {
+            dobError.innerHTML ="";
         }
     }
     return dateOfBirth;  
