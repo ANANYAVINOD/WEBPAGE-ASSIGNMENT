@@ -526,6 +526,12 @@ nav li a:hover {
   color: white;
 }
 
+nav .current {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
 .menu-bar  li a {
   display: flex;
   padding-left: 20px;

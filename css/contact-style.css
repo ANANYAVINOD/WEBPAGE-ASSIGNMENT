@@ -6,7 +6,7 @@ main {
 }
 
 .content {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -30,8 +30,12 @@ main {
     padding-right: 80px;
     background-color: #eabf25;
     height: 50%;
+    width: 60%;
 }
 
+.panel-right .flex-box {
+    margin-bottom: 20px;
+}
 .form-field {
     padding: 8px;
     padding-right: 40px;
@@ -39,8 +43,10 @@ main {
 }
 
 input[type= date] {
-    padding-right: 70px;
+    width:100%;
+    padding-left: 43px;
 }
+
 #subject {
     padding-bottom: 50px;
 }
@@ -48,6 +54,7 @@ input[type= date] {
 .label-div {
     font-size: 16px;
     font-weight: bold;
+    padding-right: 10px;
 }
 
 .form-div {
@@ -67,16 +74,15 @@ input[type= date] {
     font-weight: bold;
 }
 
+.btn {
+    text-align: center;
+}
+
 #contact-button:hover {
     border: 3px solid black;
 }
 
-#fname-error,
-#lname-error,
-#dob-error,
-#num-error,
-#mail-error,
-#subject-error {
+.error {
     font-size: 12px;
     color: red;
 }
@@ -98,14 +104,14 @@ input[type= date] {
        text-align: center;
     }
     .panel-right {
-        padding: 50px;
+        margin: 0 auto;
+        padding:20px;
+        padding-right: 80px;
+        width: 90%;
     }
+
     .form-field {
-    padding-right: 60%;
-    }
-    #contact-button {
-        left: 45%;
-        position: absolute;
+    padding-right: 30%;
     }
 }
 
@@ -113,6 +119,9 @@ input[type= date] {
     .form-field {
     padding-right: 30%;
     } 
+    .panel-right .flex-box {
+        flex-direction: column;
+    }
 }
 
 @media (max-width:486px) {
