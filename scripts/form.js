@@ -59,15 +59,15 @@ function firstNameValidate() {
     const firstName = document.getElementById('fname').value;
     const fnameError = document.getElementById('fname-error');
     if(firstName == "") {
-        fnameError.innerHTML = "*Please fill the first name field";
+        fnameError.innerHTML = "* Please fill the first name field";
         return false;
     }
     else if(firstName.length <= 2) {
-        fnameError.innerHTML = "*Please enter a valid name";
+        fnameError.innerHTML = "* Please enter a valid name";
         return false;
     }
     else if(firstName.length >= 10) {
-        fnameError.innerHTML = "*First name shouldn't exceed 10 characters"; 
+        fnameError.innerHTML = "* First name shouldn't exceed 10 characters"; 
         return false;
     }
     else if (firstName.match(nameFormat)){
@@ -75,7 +75,7 @@ function firstNameValidate() {
         return firstName;
     } 
     else {
-        fnameError.innerHTML = "Please enter a valid name";
+        fnameError.innerHTML = "* Please enter a valid name";
         return false;
     }     
 }
@@ -84,11 +84,11 @@ function lastNameValidate() {
     const lastName = document.getElementById('lname').value;
     const lnameError = document.getElementById('lname-error');
     if(lastName == "") {
-        lnameError.innerHTML = "*Please fill the last name field";
+        lnameError.innerHTML = "* Please fill the last name field";
         return false;
     }
     else if(lastName.length >= 15) {
-        lnameError.innerHTML = "*Last name shouldn't exceed 15 characters";
+        lnameError.innerHTML = "* Last name shouldn't exceed 15 characters";
         return false; 
     }
     else if (lastName.match(nameFormat)){
@@ -96,7 +96,7 @@ function lastNameValidate() {
         return lastName;
     } 
     else {
-        lnameError.innerHTML = "Please enter a valid name";
+        lnameError.innerHTML = "* Please enter a valid name";
     }     
         
 }
