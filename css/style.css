@@ -89,7 +89,7 @@ border-bottom: 1px solid #eabf25; ;
 }
 
 /*................................................
-  8.MEDIA QUERIES
+    8.MEDIA QUERIES
 .................................................*/
 @media (max-width:990px) {
 .content {
@@ -108,6 +108,7 @@ border-bottom: 1px solid #eabf25; ;
 }
 
 @media (max-width:990px) {
+
   .content {
     flex-direction: column;
     text-align: center;
