@@ -82,7 +82,7 @@ body {
 }
 
 /*................................................
-  8.MEDIA QUERIES
+    8.MEDIA QUERIES
 .................................................*/
 @media (max-width:990px) {
 .content {
@@ -101,6 +101,7 @@ body {
 }
 
 @media (max-width:990px) {
+
   .content {
     flex-direction: column;
     text-align: center;
