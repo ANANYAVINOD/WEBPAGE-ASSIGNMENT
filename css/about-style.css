@@ -51,7 +51,14 @@ body {
 
 .testimonial p{
     margin-top: 10px;
-    padding: 20px;
+    
     padding-top:0;
 }
+
+.testimonial-area .flex-box {
+    flex-direction: column;
+}
   
+.secondary {
+    margin-bottom: 10px;
+}

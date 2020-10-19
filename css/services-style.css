@@ -7,8 +7,8 @@ body {
 }
 
 .banner {
-    margin-top: 100px;
-   padding: 80px;
+    margin-top: 120px;
+    padding: 80px;
     margin-left :30px;
     margin-right: 30px;
     background-image: url("../images/banner.jpg");
@@ -45,12 +45,13 @@ h1 {
 }
 
 .content {
-    margin:0 auto;
-    width:70%;
+    margin: 0 auto;
+    width: 95%;
 }
 
 .block {
     margin-top :20px;
+    margin-bottom: 20px;
 }
 
 h2 {
