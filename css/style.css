@@ -17,7 +17,6 @@ body {
 
 .content {
   padding: 64px;
-  background-color:#eabf25;
 }
 
 .content .panel-left,
@@ -36,12 +35,11 @@ body {
   font-weight: bolder;
   margin-bottom: 40px;
 }
+
 .block {
   padding: 40px;
-}
+  border-top: 1px solid #eabf25; ;
 
-.block-training {
-background-color: #3F6CE5 ;
 }
 
 .listing-style-one li img {
@@ -81,12 +79,6 @@ background-color: #3F6CE5 ;
 
 .testimonial {
   text-align: center;
-}
-
-.block-centre ,
-.block-award,
-.block-features {
-border-bottom: 1px solid #eabf25; ;
 }
 
 /*................................................
