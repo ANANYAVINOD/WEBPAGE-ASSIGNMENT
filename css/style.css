@@ -107,10 +107,11 @@ body {
 
 .btn {
   padding: 5px;
-  border: 1px solid black;
   font-size: 13px;
   border-radius: 3px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: black;
+  color: white;
 }
 
 .btn:hover {
@@ -173,6 +174,20 @@ body {
   text-align: center;
   margin-bottom: 8px;
   display: block;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 1px;
+  right: -28px;
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  display: block;
+}
+
+#logout-button {
+  margin-top: 10px;
 }
 
 /*................................................

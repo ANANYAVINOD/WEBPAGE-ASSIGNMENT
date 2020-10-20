@@ -3,7 +3,6 @@ document.querySelector("#contact-button").addEventListener("click", function (ev
     const name = nameValidate();
     const firstName = name[0];
     const lastName = name[1];
-
     const phoneNo = numValidate();
     const emailId = emailValidate();
     const subj = subjectValidate();
@@ -114,7 +113,7 @@ function emailValidate() {
      else {
         emailError.innerHTML = "* Please enter a valid email id";
         return false;
-    }    
+    }  
 }
 
 function subjectValidate() {
@@ -157,4 +156,14 @@ function dobValidate() {
     return dateOfBirth;  
 }
 
+if (localStorage.getItem("currentuser")) {
+    let userName = JSON.parse(localStorage.getItem("currentuser")).name;
+    document.getElementById("fname").value = userName;
+
+    let userMail = JSON.parse(localStorage.getItem("currentuser")).email;
+    document.getElementById("mail").value = userMail;
+
+    
+
+}
 

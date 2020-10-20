@@ -3,7 +3,7 @@ if (localStorage.getItem("currentuser")) {
         document.getElementById("loggedInDropdown").classList.toggle("show");  
         document.getElementById("Dropdown").classList.toggle("hide");
     });
-    var userName = JSON.parse(localStorage.getItem("currentuser")).name;
+    let userName = JSON.parse(localStorage.getItem("currentuser")).name;
     document.getElementById("name-display").innerHTML = "Hi, " + userName;
 
     document.querySelector("#logout-button").addEventListener("click", function () {
@@ -13,6 +13,10 @@ if (localStorage.getItem("currentuser")) {
         location.reload();
 
     });
+
+    document.getElementById("search").style.display ="flex";
+    document.getElementById("envelope").style.display ="flex";
+    document.getElementById("dropbtn").style.display ="flex";
     
 }
 else {
@@ -21,11 +25,9 @@ else {
         document.getElementById("loggedInDropdown").classList.toggle("hide");
     });
 
-    document.querySelector("#login-button").addEventListener("click", function () {
-        location.reload();
-    });
-   
-
+    document.getElementById("search").style.display ="none";
+    document.getElementById("search").style.display ="none";
+    document.getElementById("dropbtn").style.display ="flex";
 }
  
     
@@ -43,7 +45,9 @@ function openRegForm() {
 
 function closeRegForm() {
     document.getElementById("regForm").style.display = "none"; 
+    location.reload();
 }
+
 
 
 

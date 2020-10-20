@@ -1,17 +1,20 @@
 function login() {
     let uname = document.getElementById("name").value;
     let password = document.getElementById("psw").value;
-    var userList = localStorage.getItem("user");
+    let userList = localStorage.getItem("user");
     let allUsers = JSON.parse(userList);
   
     for (i = 0; i < allUsers.length; i++) {
       if (uname == allUsers[i].username && password == allUsers[i].password) {
         console.log("logged in " + allUsers[i].username);
-        var currentUser = {
-          name: allUsers[i].username
+        let currentUser = {
+          name: allUsers[i].username,
+          email: allUsers[i].email
         };
         localStorage.setItem("currentuser", JSON.stringify(currentUser));
-        document.getElementById("myForm").style.display = "none";
+        
+        document.getElementById("myForm").style.display = "none"; 
+        location.reload();
         return;
       }
     }
@@ -23,7 +26,7 @@ function login() {
     let error = document.getElementById("error-message");
     let name = document.getElementById("name").value;
     let pass = document.getElementById("psw").value;
-    if (name == " ") {
+    if (name == "") {
       error.innerHTML = "Invalid Username";
     }
     else if (pass == "") {
@@ -32,3 +35,5 @@ function login() {
       error.innerHTML = "Incorrect Username or Password";
     }
   }
+
+
