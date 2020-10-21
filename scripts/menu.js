@@ -29,8 +29,7 @@ else {
     document.getElementById("search").style.display ="none";
     document.getElementById("dropbtn").style.display ="flex";
 }
- 
-    
+   
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
